@@ -1,0 +1,5 @@
+api==0.0.7
+azure_storage==0.37.0
+fastapi==0.88.0
+statsmodels==0.13.5
+uvicorn==0.11.3
