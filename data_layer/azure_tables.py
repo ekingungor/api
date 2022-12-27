@@ -4,7 +4,7 @@ from azure.core.exceptions import HttpResponseError
 
 STORAGE_ACCOUNT_CONNECTION_STR = os.getenv("STORAGE_ACCOUNT_CONNECTION_STRING")
 TABLE_NAME = "TelemetryData"
-BATCH_SIZE = 100
+BATCH_SIZE = 1000
 
 class AzureTables():
     def __init__(self):
