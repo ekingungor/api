@@ -1,7 +1,8 @@
+import os
 from azure.data.tables import TableServiceClient, TableEntity, EntityProperty
 from azure.core.exceptions import HttpResponseError
 
-STORAGE_ACCOUNT_CONNECTION_STR = "DefaultEndpointsProtocol=https;AccountName=myresourcegroup849e;AccountKey=s6L9PM0sRXdOvsWFsqWgxYI/9n/k/HZPp9Urv5+vpIohppbMfpho2owf+xycxurUPABAAJujYZ+n+AStLvg7Lw==;EndpointSuffix=core.windows.net"
+STORAGE_ACCOUNT_CONNECTION_STR = os.getenv("STORAGE_ACCOUNT_CONNECTION_STRING")
 TABLE_NAME = "TelemetryData"
 BATCH_SIZE = 100
 
