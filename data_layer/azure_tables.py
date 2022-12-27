@@ -28,7 +28,6 @@ class AzureTables():
                 count = 0
 
                 for entity_chosen in queried_entities:
-                    print(entities)
                     count = count + 1
                     corrupt = False
                     for key in select:
