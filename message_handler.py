@@ -6,10 +6,9 @@ from azure.servicebus import (
 )
 from azure.data.tables import TableServiceClient, TableEntity, EntityProperty
 import json
-import os
 
-SERVICE_BUS_CONNECTION_STR = os.getenv("SERVICE_BUS_CONNECTION_STR")
-STORAGE_ACCOUNT_CONNECTION_STR = os.getenv("STORAGE_ACCOUNT_CONNECTION_STR")
+SERVICE_BUS_CONNECTION_STR = "Endpoint=sb://iothubsbus.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=JbgTg88r5U+6x6dAAA3dnHS2uyToyx8MhFfrwmvgXcA="
+STORAGE_ACCOUNT_CONNECTION_STR = "DefaultEndpointsProtocol=https;AccountName=myresourcegroup849e;AccountKey=s6L9PM0sRXdOvsWFsqWgxYI/9n/k/HZPp9Urv5+vpIohppbMfpho2owf+xycxurUPABAAJujYZ+n+AStLvg7Lw==;EndpointSuffix=core.windows.net"
 QUEUE_NAME = "queue1"
 TABLE_NAME = "TelemetryData"
 
